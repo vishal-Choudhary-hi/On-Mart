@@ -1,0 +1,229 @@
+
+
+#welcome{
+    display:flex;
+    justify-items: center;
+    height:200px;
+    width:100%;
+    padding-top: auto;
+    padding-bottom: auto;
+}
+#innerwelcome{
+    display:flex;
+    background-color: #fcf15815;
+    vertical-align: middle;
+    margin: auto;
+    height:60%;
+    width:70%;
+    border:0.2em dashed #ffed4b;
+    border-radius: 0.6em;
+}
+#welcomelogo{
+    margin-top:0.5em;
+    margin-left:0.7em;
+    background: url("../images/discountlogo.png");
+    background-repeat:no-repeat; 
+    background-position: center;
+    background-size: cover;
+    width: 10%;
+    height: 90%;
+}
+#welcomesentence{
+    margin-left:2em;
+    margin-top:auto;
+    margin-bottom:auto;
+}
+#welcomesentence p{
+    font-size: 1.6em;
+    letter-spacing: 0.2em;
+    font-weight: 900;
+}
+#welcomesentence p span{
+    font-size: 1.4em;
+    font-weight: 600;
+    color: #ffed4b;
+}
+
+#shopingcategories{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    height: 300px;
+}
+#TopSellingItems{
+    margin:auto;
+    width: 80%;
+    display: flex;
+}
+#TopSellingItems p{
+    font-size:1.3em;
+    letter-spacing: 0.2em;
+    font-weight: 600;
+    width: 23%;
+}
+.sliderbuttons{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+#shopintcategoriesdiv{
+    /* overflow-x:scroll;
+    overflow-y:hidden; */
+    display:flex;
+    height:60%;
+    width: 80%;
+    margin:auto;
+}
+.itemcard{
+    height: 190px;
+    width: 120px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left:0.5em;
+    margin-right:0.5em;
+    border: 3px solid rgba(148, 253, 78, 0.897);
+    border-radius:0.4em;
+}
+.itemcard .itemimage{
+    margin-top:auto;
+    margin-bottom:auto;
+    height: 52%;
+    width: 100%;
+}
+.itemimage img{
+    height:100%;
+    width:100%;
+} 
+.iteminfo{
+    display: flex;
+}
+.itemname{
+    font-size: 1em;
+    letter-spacing: 0.2em;
+    margin-right: auto;
+    margin-left: 0.2em;
+    font-weight: 800;
+}
+.itemquantity{
+    margin-left: auto;
+    margin-right: 0.2em;
+    font-size: 0.8em;
+    margin-top: auto;
+    opacity:0.8;
+}
+.itemprice{
+    display: flex;
+    font-size: 1.2em;
+    font-weight: 800;
+    margin-left: 0.2em;
+}
+.itemprice .sqlprice{
+    margin-left:1em;
+    width: 100%;
+    /* border:0.1em dashed black; */
+}
+form{
+    height: 100%;
+}
+.addtocartbutton{
+    width: 90%;
+    display: block;
+    height: 14%;
+    margin-left: 0.4em;
+    background-color: #ffed4b;
+    border: none;
+    border-radius:0.3em;
+    font-size: 1.2em;
+}
+
+.addtocartbutton:hover{
+    background-color:#ffe817;
+    cursor: pointer;
+}
+#carogories{
+    flex-direction: row;
+    height:1000px;
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 3em;
+}
+#catagoriespare{
+    width: 100%;
+    padding-top: 0.2em;
+    padding-bottom:.2em;
+    padding-left:0.3em;
+    font-size:1.5em;
+    background-color:#ffe817;
+    border-top-left-radius:0.4em ;
+    border-top-right-radius:0.4em ;
+}
+#catogoriesContainer{
+    height:100%;
+}
+.catagorycard{
+    width: 100%;
+    margin-top:2em;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    display:flex;
+    background-color: #fcf15815;
+    height:10%;
+    border: 0.2em dashed #ffed4b;
+    border-top-left-radius:0.5em ;
+    border-top-right-radius:0.5em ;
+}
+.cardanchor{
+    text-decoration: none;
+    color:#141414;
+}
+.catagoryimg{
+    width: 9%;
+    margin-inline: 2em;
+    background: url(../images/discountlogo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.red{
+    text-align: center;
+    background-color:rgb(255, 223, 223);
+    color:red;
+}
+.addedtocard{
+    display:none;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size:1.2em;
+    font-weight:800;
+}
+.plus{
+    background-color:#ffed4b;
+    border: none;
+    width: 20%;
+    text-align: center;
+    align-items: center;
+    border-radius:50%;
+}
+.minus{
+    background-color:#ffed4b;
+    border: none;
+    width: 20%;
+    text-align: center;
+    align-items: center;   
+    border-radius:50%;
+
+}
+
+
+@media 
+  (max-device-width: 800px)  {
+    #welcomelogo{
+        width: 15%;
+    }
+    .catagoryimg{
+        width: 23%;
+    }
+}
+

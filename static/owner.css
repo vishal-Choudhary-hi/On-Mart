@@ -1,0 +1,100 @@
+#maindiv{
+    display:flex;
+    height:40em;
+
+}
+#seconddiv{
+    border:1em solid red;
+    margin:auto;
+    width:80%;
+    height:100%;
+}
+#formdiv{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    width: 40%;
+    margin:auto auto;
+    background-color: white;
+    border-top-right-radius:0.5em;
+    border-bottom-right-radius:0.5em;
+    padding:1em;
+}
+#formdiv p{
+    font-size: 2em;
+    font-weight:bold;
+}
+#formdiv input{
+    width: 90%;
+    margin-top:1em;
+    margin-bottom:1em;
+    font-size:1em;
+    border:None;
+    border-bottom: 0.1em solid #141414;
+}
+#formdiv select{
+    opacity: 0.7;
+    width: 90%;
+    margin-top:1em;
+    margin-bottom:1em;
+    font-size:1em;
+    border:None;
+    border-bottom: 0.1em solid #141414;
+}
+#formdiv button{
+    width:50%;
+    height:10%;  
+    display: flex;
+    background-color: rgba(170, 255, 113, 0.822);
+    border-radius: 2em;
+    border: none;
+    font-size: 1.2em;
+    font-weight: 550;
+    padding-left: 2em;
+}
+#formdiv button:hover{
+    cursor: pointer;
+    box-shadow:0em 0em 0.4em 0.2em rgba(182, 255, 133, 0.822);
+}
+.red{
+    background-color:rgba(255, 0, 0, 0.205);
+    color:red;
+    margin-top:1em ;
+    text-align:center;
+    border-radius: 0.2em;
+}
+#edititemsbutton{
+    margin-top:1em;
+   height:45px;
+   width:130px;
+   border-radius: 0.3em;
+   background-color: rgba(182, 255, 133, 0.822);
+   justify-content:center;
+}
+
+#edititemsbutton a{
+    margin-left: 8%;
+    margin-top: 8%;
+    display:block;
+    font-weight:bold;
+    color:#141414;
+    text-decoration:none;
+    font-size: 1.4em;
+}
+#productimage{
+    margin-top:1em;
+   height:45px;
+   width:130px;
+   border-radius: 0.3em;
+   background-color: rgba(182, 255, 133, 0.822);
+   justify-content:center;
+}
+#productimage a{
+    margin-left: 8%;
+    margin-top: 8%;
+    display:block;
+    font-weight:bold;
+    color:#141414;
+    text-decoration:none;
+    font-size: 1.4em;
+}

@@ -1,0 +1,32 @@
+extends base.pug
+block scripts
+    
+block style
+    style 
+       include ../static/home.css
+       include ../static/profile.css
+block content
+    br
+    br
+    div#main 
+        div#profilediv 
+            h2 Profile
+        div#profile 
+            div#profilelist 
+                    div#details
+                        div#profileImage 
+                        div#otherInfo 
+                            div.label Name
+                                p= user.name 
+                            div.label Email ID
+                                p.email= user.email
+                            div.label Phone Number
+                                p= user.phoneNumber
+                            div.label Address
+                                p=user.address
+                    div#buttondiv
+                            button#button() 
+                                a(href="editprofile") Edit Profile  
+            div#furthercontent
+                block furthercontent
+                

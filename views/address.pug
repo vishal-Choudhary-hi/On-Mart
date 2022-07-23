@@ -1,0 +1,10 @@
+extends profile.pug 
+block style
+    style 
+       include ../static/profile.css
+       include ../static/myorders.css
+block furthercontent
+    div#myorders 
+        div#myordersdiv
+            p.para My Address
+            p=user.address

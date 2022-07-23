@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    title OnMart
+    link(rel='stylesheet', type='text/css', href='../static/stylebase.css')
+    block scripts
+    block style
+  body
+    div#navbar 
+      div#navbarlogo
+      ul
+          li.withoutbutton #[a(href='/') Home] 
+          li#searchlist
+            form#searchbar(action="../auth/search" method="POST")
+              input(type="search",placeholder="What are you looking for?" name='search' onchange="this.form.submit()")
+          if user
+            li.withoutbutton #[a(href='/profile') Profile] 
+            li.withoutbutton #[a(href='/auth/logout') Logout] 
+          else 
+            li.withoutbutton #[a(href='/login') Resgister] 
+            li.withoutbutton #[a(href='/logedin') Login] 
+          li#mycart
+              button(type="button")
+                div 
+                a(href='/mycart') My cart
+      
+    block content

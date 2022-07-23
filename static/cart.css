@@ -1,0 +1,195 @@
+#maindiv{
+    margin-top:2em;
+    width: 100%;
+    /* height:auto; */
+    display:flex;
+    justify-content:center;
+}
+#cartdiv{
+    height: 40em;
+    width: 70%;
+    margin-left:auto;
+    margin-right:auto;
+}
+#p{
+    background-color:#ffed4b;
+    border-radius: 1em;
+    height:3em;
+    text-align:center;
+}
+#p p{
+    font-weight:bold;
+    font-size:1.5em;
+    word-spacing: 0.1em;
+}
+#tableholder{
+    margin-top:2em;
+    height:100%;
+}
+
+
+
+
+
+.itemcard{
+    display:flex;
+    height: 6em;
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: auto;
+    margin-left:0.5em;
+    margin-right:0.5em;
+    border: 3px solid rgba(148, 253, 78, 0.897);
+    border-radius:0.4em;
+}
+.itemcard .itemimage{
+    margin-top:auto;
+    margin-bottom:auto;
+    height: 80%;
+    width: 13%;
+}
+.itemimage img{
+    height:100%;
+    width:100%;
+}
+.itemallinfo{
+    margin-left: 2em;
+    margin-top:1%;
+    height:100%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+.itemallinfocategories{
+    margin-left: 2em;
+    margin-top:1%;
+    height:100%;
+    width:60%;
+    display: flex;
+    flex-direction: column;
+}
+.iteminfo{
+    display: flex;
+    align-items: baseline;
+}
+.itemname{
+    font-size: 1.5em;
+    letter-spacing: 0.2em;
+    margin-left: 0.2em;
+    font-weight: 800;
+}
+.itemquantity{
+    margin-left: 2em;
+    margin-right: 0.2em;
+    font-size: 0.8em;
+    opacity:0.8;
+}
+.itemprice{
+    display: flex;
+    font-size: 1.2em;
+    font-weight: 800;
+    margin-left: 0.2em;
+}
+.itemprice .sqlprice{
+    margin-left:1em;
+    width: 100%;
+    /* border:0.1em dashed black; */
+}
+
+
+.addtocart{
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: space-around;
+    height: 100%;
+}
+.plus{
+    font-size: 1em;
+    background-color:#ffed4b;
+    border: none;
+    font-weight: bold;
+    padding: 0.4em;
+    text-align: center;
+    align-items: center;
+   
+}
+.minus{
+    font-size: 1em;
+    background-color:#ffed4b;
+    border: none;
+    font-weight: bold;
+    padding: 0.4em;
+    text-align: center;
+    align-items: center;   
+  
+
+}
+.cartform{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+}
+.addtocartbutton{
+    width: 35%;
+    display: block;
+    height: 50%;
+    /* margin-left: 0.4em; */
+    background-color: #ffed4b;
+    border: none;
+    border-radius: 0.3em;
+    font-size: 1.2em;
+    margin: auto;
+    margin-inline: auto;
+}
+
+.addtocartbutton:hover{
+    background-color:#ffe817;
+    cursor: pointer;
+}
+
+#totalprice{
+    margin-top: 1em;
+    margin-bottom: auto;
+    margin-inline:auto ;
+    width: 50%;
+    display: flex;
+    justify-content:center;
+}
+#totalprice p{
+    text-align: center;
+    font-size:1.3em;
+    /* width:11%; */
+    margin: auto;
+}
+#checkout{
+    font-size: 1.3em;
+    padding: 0.3em;
+    padding-inline:0.6em;
+    background-color:rgba(148, 253, 78, 0.897);
+    border: none;
+    border-radius:0.2em ;
+}
+.red{
+    text-align: center;
+    background-color:rgb(255, 223, 223);
+    color:red;
+    font-size: 2em;
+    border-radius: 0.6em;
+}
+.addtocartbutton{
+    width: 90%;
+    display: block;
+    height: 40%;
+    margin-left: 0.4em;
+    background-color: #ffed4b;
+    border: none;
+    border-radius:0.3em;
+    font-size: 1.2em;
+}
+
+.addtocartbutton:hover{
+    background-color:#ffe817;
+    cursor: pointer;
+}

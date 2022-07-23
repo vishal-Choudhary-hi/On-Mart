@@ -1,0 +1,117 @@
+#welcome{
+    height:650px;
+    width: 100%;
+    display:flex;
+    justify-content:center;
+}
+#login{
+    margin:auto auto;
+    padding:0.3em;
+    /* background-color:rgba(170, 255, 113, 0.822); */
+    /* border:0.51em solid rgba(170, 255, 113, 0.822); */
+    border-radius:0.9em;
+    width: 70%;
+    height: 80%;
+    display: flex;
+    /* flex-direction: column; */
+}
+#logindiv2{
+    display: flex;
+    flex-direction: column;
+    border: 0.25em solid #ffee50;
+    width: 80%;
+    margin: auto auto;
+    padding:2em;
+    background:linear-gradient(70deg,rgba(255, 192, 56, 0.288),rgba(86, 245, 65, 0.26));    
+}
+#logindiv{
+    display: flex;
+    border: 0.25em solid #ffee50;
+    width: 80%;
+    margin: auto auto;
+    padding:2em;
+    background:linear-gradient(70deg,rgba(255, 192, 56, 0.288),rgba(86, 245, 65, 0.26));    
+}
+#loginimage{
+    padding: 3em;
+    width: 60%;
+    background-color:rgb(148, 253, 78);
+    border-top-left-radius:0.5em;
+    border-bottom-left-radius:0.5em;
+}
+#image{
+    height: 70%;
+    width: 70%;
+    background: url('../images/grocerylogo.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center ;
+}
+#para{
+    display:flex;
+    margin-top: 1em;
+    width: 100%;
+    height:30%;
+    font-size:2em;
+}
+#typing{
+    color:white;
+    font-size:1.5em;
+}
+#cursor{
+    margin-top:2%;
+    margin-left:2%;
+    height:50%;
+    background-color:white;
+    width:1.2%;
+}
+#loginformdiv{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    width: 40%;
+    margin:auto auto;
+    background-color: white;
+    border-top-right-radius:0.5em;
+    border-bottom-right-radius:0.5em;
+    padding:1em;
+}
+#loginformdiv p{
+    font-size: 2em;
+    font-weight:bold;
+}
+#loginform input{
+    width: 90%;
+    margin-top:1em;
+    margin-bottom:1em;
+    font-size:1em;
+    border:None;
+    border-bottom: 0.1em solid #141414;
+}
+#loginform button{
+    width:50%;
+    height:10%;  
+    background-color: rgba(170, 255, 113, 0.822);
+    border-radius: 2em;
+    border: none;
+    font-size: 1.2em;
+    font-weight: 550;
+}
+#loginform button:hover{
+    cursor: pointer;
+    box-shadow:0em 0em 0.4em 0.2em rgba(182, 255, 133, 0.822);
+}
+.red{
+    background-color:rgba(255, 0, 0, 0.205);
+    color:red;
+    margin-top:1em ;
+    text-align:center;
+    border-radius: 0.2em;
+}
+
+#loginform p{
+    margin-top: 1em;
+    font-size: 1em;
+    font-weight:normal;
+    opacity: 0.5;
+}

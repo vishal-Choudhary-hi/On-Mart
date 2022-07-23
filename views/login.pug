@@ -1,0 +1,37 @@
+extends base.pug
+block scripts
+    
+block style
+    style 
+       include ../static/home.css
+       include ../static/login.css
+
+block content
+    div#welcome
+       div#login 
+         div#logindiv
+            div#loginimage 
+                div#image
+                div#para
+                    p#typing
+                    p#cursor
+            div#loginformdiv
+                p Signin
+                form#loginform(action="../auth/register",method="POST")
+                    input(type="text",id="name",Name="name",placeholder="Name")
+                    br
+                    input(type="text",id="email",Name="email",placeholder="Email")
+                    br
+                    input(type="number",id="phoneNumber",Name="phoneNumber",placeholder="Phome Number")
+                    br
+                    input(type="text",id="address",Name="address",placeholder="Address")
+                    br
+                    input(type="password",id="password",Name="password",placeholder="PassWord")
+                    br
+                    input(type="password",id="Confirm_Pass_Word",Name="Confirm_Pass_Word",placeholder="Confirm PassWord")
+                    br
+                    button(type="sumnit") Sign In
+    if message
+        h3.red= message  
+
+    script(src='../static/main.js')

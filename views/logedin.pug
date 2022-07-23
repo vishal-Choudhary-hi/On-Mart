@@ -1,0 +1,22 @@
+extends base.pug
+block scripts
+    
+block style
+    style 
+       include ../static/home.css
+       include ../static/login.css
+
+block content
+    div#welcome
+       div#login 
+         div#logindiv2
+            div#loginformdiv
+                p Login
+                form#loginform(action="../auth/login",method="POST")
+                    input(type="text",id="email",Name="email",placeholder="Email")
+                    br
+                    input(type="password",id="password",Name="password",placeholder="PassWord")
+                    br
+                    button(type="sumnit") Log In
+            if message
+                h3.red= message  

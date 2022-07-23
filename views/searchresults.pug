@@ -1,0 +1,32 @@
+extends base.pug
+block scripts
+
+block style
+    style 
+       include ../static/cart.css
+
+block content
+    div#maindiv 
+        div#cartdiv
+            div#p 
+                p Search Results
+            iframe(name="dummyframe" id="dummyframe" style="display: none")
+            div#tableholder
+                    if message 
+                        p.red=message
+                    else
+                        each product in products
+                            div.itemcard 
+                                div.itemimage
+                                    img(src="../images/"+product.product_name+".jpeg" alt="Image" onerror='this.src="../images/grocerylogo.png"')
+                                div.itemallinfo
+                                    div.iteminfo
+                                        p.itemname=product.product_name
+                                        p.itemquantity=product.product_quantity 
+                                    div.itemprice
+                                        p Rs:-
+                                        p.sqlprice=product.product_price
+                            
+                                div.addtocart
+                                    form(action="../auth/addtocart",method="POST",target="dummyframe")    
+                                    button.addtocartbutton(type='submit',name='item_id',value=product.product_id)  Add +

@@ -1,0 +1,25 @@
+extends base.pug
+block scripts
+    
+block style
+    style 
+       include ../static/home.css
+       include ../static/login.css
+
+block content
+    div#welcome
+       div#login 
+            div#loginformdiv
+                p Update
+                form#loginform(action="../auth/editprofile",method="POST")
+                    p=user.email
+                    input(type="text",id="name",Name="name",placeholder=user.name value=user.name)
+                    br
+                    input(type="numbers",id="phoneNumber",Name="phoneNumber",placeholder=user.phoneNumber,value=user.phoneNumber)
+                    br
+                    input(type="text",id="address",Name="address",placeholder=user.address value=user.address)
+                    br
+                    button(type="sumnit" name="email" value=user.email) Update
+
+    if message
+        alert Updated profile successfully  

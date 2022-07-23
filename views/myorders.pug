@@ -1,0 +1,44 @@
+extends profile.pug 
+block style
+    style 
+       include ../static/profile.css
+       include ../static/myorders.css
+block furthercontent
+    div#myorders 
+        div#myordersdiv
+            p.para My orders 
+            div#ordersdiv 
+                div.ordercard
+                    div.orderwritten
+                        div.orderstatus 
+                            p order status  :
+                            p Delivered
+                        div.orderid 
+                            p order id  :
+                            p 123123123
+                    div.orderbuttons 
+                        button.view View Details 
+                        button.help Need Help
+                div.ordercard
+                    div.orderwritten
+                        div.orderstatus 
+                            p order status:
+                        div.orderid 
+                            p order id:
+                    div.orderbuttons 
+                        button.view View Details 
+                        button.help Need Help
+                div.ordercard
+                    div.orderwritten
+                        div.orderstatus 
+                            p order status:
+                        div.orderid 
+                            p order id:
+                    div.orderbuttons 
+                        button.view View Details 
+                        button.help Need Help
+                div.sliderbuttons
+                    button.scrollbuttons <
+                    button.scrollbuttons >
+                
+

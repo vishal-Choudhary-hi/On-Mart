@@ -1,0 +1,35 @@
+doctype html
+html
+  head
+    script(src='../static/addtocartformvalidate.js')  
+    title OnMart
+    link(rel='stylesheet', type='text/css', href='../static/owner.css')
+    block style
+  body
+    div#maindiv 
+        div#seconddiv 
+            div#formdiv 
+                p Edit items
+                form(name="addtocartformvalidate",action='../auth/edititems',onsubmit='return validform()',method="POST")
+                    input(type="text",id="product_name",name="product_name",placeholder="Product Name")
+                    br
+                    input(type="number",id="product_price",name="product_price",placeholder="Price")
+                    br
+                    input(type="text",id="product_quantity",name="product_quantity",placeholder="Quantity")
+                    br
+                    input(type="number",id="product_stock",name="product_stock",placeholder="Stock")
+                    br
+                    select(id="product_category",name="product_category",placeholder="Category")
+                      option(value="personal") Personal
+                      option(value="staples") staples 
+                      option(value="fruits") fruits 
+                      option(value="vegetables") vegetables 
+                      option(value="snacks") snacks 
+                    br
+                    button(type="sumnit") Edit
+                if message 
+                  h3.red=message
+                div#edititemsbutton
+                    a(href="/owner") Add items
+                div#edititemsbutton
+                    a(href="/deleteitems") Delete items

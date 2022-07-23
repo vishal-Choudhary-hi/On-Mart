@@ -1,0 +1,76 @@
+extends base.pug
+block scripts
+
+block style
+    style 
+       include ../static/home.css
+
+block content
+    div#welcome
+        div#innerwelcome
+            div#welcomelogo
+            div#welcomesentence
+                p Welcome to
+                    span OnMart
+                p Order and save upto 
+                 span 50%
+
+
+    div#shopingcategories
+        div#TopSellingItems 
+            p Top Selling Items 
+        iframe(name="dummyframe" id="dummyframe" style="display: none")
+        div#shopintcategoriesdiv
+            each product in products  
+                div.itemcard 
+                    div.itemimage
+                        img(src="../images/"+product.product_name+".jpeg" alt="Image" onerror='this.src="../images/grocerylogo.png"') 
+                    div.iteminfo
+                        p.itemname=product.product_name
+                        p.itemquantity=product.product_quantity
+                    div.itemprice
+                        p Rs:-
+                        p.sqlprice=product.product_price
+                    if product.stock<=0
+                        p.red Out of stock
+                    else if addedtocrt 
+                        p=addedtocart  
+                    else 
+                        form(action="../auth/addtocart",method="POST",target="dummyframe")    
+                            button.addtocartbutton(type='submit',name='item_id',value=product.product_id)  Add +
+                  
+    div#carogories 
+        div#catogoriesContainer
+            p#catagoriespare Choose From catagories
+            a.cardanchor(href='/personalcategory')
+                div.catagorycard 
+                    div.catagoryimg
+                    div.catagorywritten 
+                        h1 Personal     
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, porro? Perspiciatis, sequi quis molestias ad sit ipsam impedit, deserunt voluptatum vero adipisci asperiores blanditiis ab repellendus, nihil omnis? Molestias, cumque.
+            a.cardanchor(href='/staplescategory')
+                div.catagorycard 
+                    div.catagoryimg
+                    div.catagorywritten 
+                        h1 Staples     
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, porro? Perspiciatis, sequi quis molestias ad sit ipsam impedit, deserunt voluptatum vero adipisci asperiores blanditiis ab repellendus, nihil omnis? Molestias, cumque.
+            a.cardanchor(href='/snackscategory')
+                div.catagorycard 
+                    div.catagoryimg
+                    div.catagorywritten 
+                        h1 Snacks     
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, porro? Perspiciatis, sequi quis molestias ad sit ipsam impedit, deserunt voluptatum vero adipisci asperiores blanditiis ab repellendus, nihil omnis? Molestias, cumque.
+            a.cardanchor(href='/vegeablescategory')
+                div.catagorycard 
+                    div.catagoryimg
+                    div.catagorywritten 
+                        h1 Vegetables   
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, porro? Perspiciatis, sequi quis molestias ad sit ipsam impedit, deserunt voluptatum vero adipisci asperiores blanditiis ab repellendus, nihil omnis? Molestias, cumque.
+            a.cardanchor(href='/fruitscategory')
+                div.catagorycard 
+                    div.catagoryimg
+                    div.catagorywritten 
+                        h1 Fruits     
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, porro? Perspiciatis, sequi quis molestias ad sit ipsam impedit, deserunt voluptatum vero adipisci asperiores blanditiis ab repellendus, nihil omnis? Molestias, cumque.
+            
+    iframe(name="dummyframe" id="dummyframe" style="display: none")

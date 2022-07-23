@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    script(src='../static/addtocartformvalidate.js')  
+    title OnMart
+    link(rel='stylesheet', type='text/css', href='../static/owner.css')
+    block style
+  body
+    div#maindiv 
+        div#seconddiv 
+            div#formdiv 
+                p Delete items
+                form(name="addtocartformvalidate",action='../auth/deleteitems',onsubmit='return validform()',method="POST")
+                    input(type="text",id="product_name",name="product_name",placeholder="Product Name")
+                    br
+                    button(type="submit") Delete
+                if message 
+                  h3.red=message
+                div#edititemsbutton
+                    a(href="/owner") Add items
+                div#edititemsbutton
+                    a(href="/edititems") Edit items

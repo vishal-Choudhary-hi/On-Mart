@@ -1,0 +1,81 @@
+#main{
+    display:flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    height:40em;
+}
+#profilediv{
+    background-color:rgba(170, 255, 113, 0.822);
+}
+#profilediv h2{
+    font-size: 2em;
+    font-weight: bold;
+    color: #141414;
+}
+#profile{
+    display:flex;
+}
+#profilelist{
+    width: 100%;
+    background-color:rgba(228, 228, 228, 0.183);
+    padding-top:2em;
+}
+a{
+    text-decoration: none;
+    color:#141414;
+}
+li{
+    list-style-type: none;
+}
+#details{
+    height:300px;
+    display:flex;
+    background-color: #ffffff;
+
+}
+#profileImage{
+    margin-right: 2em;
+    width: 10em;
+    height: 6em;
+    background-image: url(../images/profilelogo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#otherInfo{
+    width:100%;
+}
+#otherInfo p{
+    color:#3e3e3e;
+    font-size:1em;
+}
+.label{
+    display:flex;
+    margin-top:0.5em;
+    margin-bottom:0.5em;
+    font-weight: bold;
+}
+.label p{
+    margin-left: 2em;
+    font-weight: normal;
+}
+#buttondiv{
+    width:100%;
+    display:flex;
+    justify-content: center;
+}
+#button{
+    padding: 2px;
+    font-size: 1.5em;
+    /* font-weight: 700; */
+    margin: auto auto;
+    /* height: -webkit-fill-available; */
+    /* width: 15%; */
+    background-color: rgba(170, 255, 113, 0.822);
+    border: none;
+    border-radius: 0.3em;
+}
+#button:hover{
+    cursor: pointer;
+    background-color:rgba(148, 253, 78, 0.897);
+}
